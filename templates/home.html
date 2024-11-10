@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Zuri Hotel{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <img src="https://cdn.pixabay.com/photo/2024/09/17/11/19/real-estate-9053405_640.jpg" alt="Zuri Hotel" class="img-fluid mb-4" style="max-height: 500px; object-fit: cover; width: 1200px;">
+        <h2>Welcome to Zuri Hotel</h2>
+        <p class="lead">Experience luxury and comfort in the heart of the city. Zuri Hotel is dedicated to providing an exceptional stay for our guests.</p>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h4>Luxury Rooms</h4>
+                <p>Our rooms are designed to provide maximum comfort with modern amenities and a touch of elegance.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Exquisite Dining</h4>
+                <p>Enjoy a variety of cuisines from around the world, crafted by our top chefs to satisfy every palate.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Relaxing Spa</h4>
+                <p>Unwind and rejuvenate at our spa, where tranquility meets luxury.</p>
+            </div>
+        </div>
+
+        <a href="{% url 'services' %}" class="btn btn-primary mt-4">Explore Our Services</a>
+    </div>
+{% endblock %}
